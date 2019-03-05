@@ -6,9 +6,6 @@ function [X, k] = fs_fft(x, Fs, f_0, K)
 % X is indexed by k (e.g., k = [-K, -K+1, ..., 0, 1, ..., K] and X(1) = a_{-K}
 % and the frequency corresponding to X(1) is -K*f_0 [Hz])
 %
-% ECE 2200 Spring 2014
-% By Ricky Concepcion
-%
 
 N = length(x);
 k = -K:K;
